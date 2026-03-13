@@ -1,9 +1,8 @@
 Aplikasi profil pribadi berbasis **Kotlin Multiplatform** dengan **Jetpack Compose**
 
 ## Profil
-| | |
-| **Nama** | Refi Ikhsanti |
-| **NIM** | 123140126 |
+**Nama:** Refi Ikhsanti 
+**NIM:** 123140126 
 
 ## Screenshot
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b9bb884a-278e-48e0-b20b-482c943ec119" />
