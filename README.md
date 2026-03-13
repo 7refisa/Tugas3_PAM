@@ -1,48 +1,49 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
+Aplikasi profil pribadi berbasis **Kotlin Multiplatform** dengan **Jetpack Compose**
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+## Profil
+| | |
+|---|---|
+| **Nama** | Refi Ikhsanti |
+| **NIM** | 123140126 |
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Screenshot
 
-### Build and Run Android Application
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
+## Composable Functions
+Ada 3 composable function utama yang reusable:
+### 1. `ProfileHeader()`
+Menampilkan foto profil berbentuk circular, nama, dan role/jurusan.
 
-### Build and Run Desktop (JVM) Application
+### 2. `ProfileCard()`
+Container card generik yang bisa diisi konten apa saja. 
 
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
+### 3. `InfoItem()`
+Menampilkan satu baris informasi dengan ikon, label, dan nilai. 
 
-### Build and Run iOS Application
+## Komponen yang Digunakan
+- `Column` — menyusun elemen secara vertikal
+- `Row` — menyusun elemen secara horizontal
+- `Box` — menumpuk elemen
+- `Card` — container dengan elevation dan rounded corner
+- `Text` — menampilkan teks
+- `Button` — tombol aksi Contact Me
+- `Image` — foto profil
+- `Icon` — ikon di setiap info item
+- `AlertDialog` — popup saat tombol Contact Me diklik
 
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+## Cara Build & Run
 
----
+### Android
+1. Buka project di **Android Studio**
+2. Sambungkan HP atau jalankan emulator
+3. Klik tombol **Run ▶️**
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+Atau via terminal:
+```shell
+.\gradlew.bat :composeApp:assembleDebug
+```
+
+### Desktop (JVM)
+```shell
+.\gradlew.bat :composeApp:run
+```
