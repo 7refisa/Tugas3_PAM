@@ -17,6 +17,8 @@ import androidx.compose.ui.unit.sp
 import org.jetbrains.compose.resources.painterResource
 import myprofileapp.composeapp.generated.resources.Res
 import myprofileapp.composeapp.generated.resources.profile_refi
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 
 @Composable
 fun ProfileHeader() {
@@ -95,5 +97,30 @@ fun InfoItem(
                 fontSize = 14.sp
             )
         }
+    }
+}
+
+@Composable
+fun BioSection() {
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = "UI/UX Enthusiast & Data Explorer",
+            fontSize = 16.sp,
+            fontWeight = FontWeight.SemiBold,
+            textAlign = TextAlign.Center
+        )
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        Text(
+            text = "Mahasiswa Teknik Informatika ITERA semester 6 yang passionate di bidang UI/UX Design dan Data. Aktif berorganisasi dan saat ini sedang mendalami Artificial Intelligence.",
+            fontSize = 13.sp,
+            textAlign = TextAlign.Center,
+            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.7f),
+            lineHeight = 20.sp
+        )
     }
 }
