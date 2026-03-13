@@ -2,12 +2,12 @@ Aplikasi profil pribadi berbasis **Kotlin Multiplatform** dengan **Jetpack Compo
 
 ## Profil
 | | |
-|---|---|
 | **Nama** | Refi Ikhsanti |
 | **NIM** | 123140126 |
 
 ## Screenshot
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b9bb884a-278e-48e0-b20b-482c943ec119" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/cb3e052b-cac3-44a6-a1ca-e861ed3b9d18" />
 
 ## Composable Functions
 Ada 3 composable function utama yang reusable:
